@@ -59,36 +59,36 @@ export class AppComponent {
       return;
     }
 
-    alert("Oops! Failed to send your message. Please try again later.")
-    console.log(this.contactForm.value)
+    // alert("Oops! Failed to send your message. Please try again later.")
+    // console.log(this.contactForm.value)
 
-    // this.isSending = true;
+    this.isSending = true;
 
-    // const formData = this.contactForm.value;
+    const formData = this.contactForm.value;
 
-    // this.emailService.sendEmail({
-    //   username: formData._username,
-    //   email: formData._email,
-    //   subject: formData._subject,
-    //   contact: formData._contact,
-    //   message: formData._message
-    // })
-    //   .then(() => {
-    //     alert('Message sent!');
-    //     this.contactForm.reset({
-    //       _username: '',
-    //       _email: '',
-    //       _subject: 'default',
-    //       _contact: '',
-    //       _message: '',
-    //     });
-    //   })
-    //   .catch(() => {
-    //     alert('Failed to send.');
-    //   })
-    //   .finally(() => {
-    //     this.isSending = false;
-    //   });
+    this.emailService.sendEmail({
+      username: formData._username,
+      email: formData._email,
+      subject: formData._subject,
+      contact: formData._contact,
+      message: formData._message
+    })
+      .then(() => {
+        alert('Message sent!');
+        this.contactForm.reset({
+          _username: '',
+          _email: '',
+          _subject: 'default',
+          _contact: '',
+          _message: '',
+        });
+      })
+      .catch(() => {
+        alert('Failed to send.');
+      })
+      .finally(() => {
+        this.isSending = false;
+      });
   }
 
 }
