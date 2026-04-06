@@ -1,17 +1,17 @@
 # Emailjs
 
 #Features:
-Send emails from Angular using EmailJS
-Form validation (required fields, email format)
-Success and error feedback
-Easy integration into existing Angular projects
-Fully responsive design
+Send emails from Angular using EmailJS,
+Form validation (required fields, email format),
+Success and error feedback,
+Easy integration into existing Angular projects,
+Fully responsive design,
 
 #Tech Stack:
-Angular
-EmailJS
-TypeScript
-HTML & CSS
+Angular,
+EmailJS,
+TypeScript,
+HTML & CSS,
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.23.
 
