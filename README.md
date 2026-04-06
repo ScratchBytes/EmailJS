@@ -1,13 +1,13 @@
 # Emailjs
 
-#Features:
+# Features:
 Send emails from Angular using EmailJS,
 Form validation (required fields, email format),
 Success and error feedback,
 Easy integration into existing Angular projects,
 Fully responsive design,
 
-#Tech Stack:
+# Tech Stack:
 Angular,
 EmailJS,
 TypeScript,
