@@ -1,0 +1,166 @@
+.contact-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: margin-top 0.3s ease-in-out;
+}
+
+/* TODO : Contact Form Styling */
+form {
+    width: 35%;
+    padding: clamp(13px, 1.5vw, 100px);
+    box-sizing: border-box;
+    background-color: #2A2A2A;
+    border: 1px solid #F1F0EF;
+    border-radius: clamp(4px, 0.5vw, 50px);
+    transition: width 0.3s ease-in-out;
+    color: #F1F0EF;
+}
+
+fieldset {
+    border: none;
+    background-color: transparent;
+}
+
+label {
+    font-family: 'Mocca', sans-serif;
+    font-size: clamp(1.3rem, 1.8vw, 7rem);
+    background-color: transparent;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    font-family: 'Redhawk', sans-serif;
+    font-size: clamp(0.7rem, 1vw, 7rem);
+    border: none;
+    background-color: transparent;
+    color: #F1F0EF;
+    cursor: pointer;
+}
+
+#regex {
+    color: #F88800;
+    font-family: 'Mocca', sans-serif;
+    font-size: clamp(0.9rem, 1.3vw, 6rem);
+    display: flex;
+    align-items: center;
+    height: clamp(20px, 2vw, 150px);
+    background-color: transparent;
+}
+
+#regex>p {
+    background-color: transparent;
+}
+
+.material-symbols-outlined {
+    font-size: clamp(1.3rem, 1.7vw, 7rem);
+    cursor: pointer;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
+select>option {
+    font-family: 'Mocca', sans-serif;
+    font-size: clamp(1.3rem, 1.8vw, 7rem);
+    background-color: #010B13;
+}
+
+.input-field,
+.email-field,
+.subject-field,
+.phone-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: clamp(8px, 0.5vw, 60px);
+    border: 1px solid #F1F0EF;
+    padding: clamp(4px, 0.5vw, 25px);
+    border-radius: clamp(4px, 0.5vw, 20px);
+    background-color: transparent;
+}
+
+.divider {
+    display: flex;
+    gap: clamp(8px, 1.5vw, 80px);
+    background-color: transparent;
+}
+
+.subject-field-container,
+.phone-field-container {
+    flex: 1;
+}
+
+.email-field-container,
+.divider,
+.message-field-container {
+    padding-top: clamp(4px, 0.5vw, 60px);
+}
+
+.message-field-container {
+    height: clamp(150px, 30vh, 900px);
+    padding-bottom: clamp(4px, 1vw, 60px);
+    box-sizing: border-box;
+}
+
+.message-field {
+    border: 1px solid #F1F0EF;
+    padding: clamp(4px, 1vw, 25px);
+    border-radius: clamp(4px, 0.5vw, 50px);
+    height: 90%;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+textarea {
+    height: 100%;
+}
+
+/* TODO : Contact Form Button Styling */
+.submit-bttn {
+    box-sizing: border-box;
+    padding-top: clamp(4px, 1vw, 60px);
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.bttn {
+    background-color: transparent;
+    border: none;
+}
+
+.bttn:disabled #submit {
+    cursor: not-allowed;
+}
+
+#submit {
+    width: clamp(4rem, 7vw, 35rem);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: transparent;
+}
+
+span {
+    background-color: transparent;
+}
+
+@media screen and (max-width: 900px) {
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        width: 80%;
+    }
+}
