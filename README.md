@@ -1,5 +1,8 @@
 # Emailjs@browser
 
+# About
+An Angular-based project demonstrating how to integrate EmailJS to send emails directly from a frontend contact form without a backend. Includes form validation, success/error notifications, and responsive design.
+
 # Features:
 - Send emails from Angular using EmailJS
 - Form validation (required fields, email format)
